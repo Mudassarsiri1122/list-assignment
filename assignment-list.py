@@ -4,156 +4,185 @@ print(name[0])
 print(name[1])
 print(name[2])
 print(name[3])
+
+
+
+
 #Question 2
 names:list[str]=['Saif','Ahad','Mubashir','Muzamil']
 for name in names:
  print(f"maira name {name} hai")
+ 
+ 
+ 
+ 
  #Question 3
  cars:list[str]=['Corolla','Elantra','Honda Civic','Honda City']
 for car in cars:
  print(f"I would like to own a {car}")
+ 
+ 
+ 
+ 
+ 
  #Question 4
  guest:list[str]=['Saif','Ahad','Mubashir','Muzamil']
  for guests in guest:
   print(f"Dear {guests} please come my home and taste my food")
+  
+  
+  
+  
 #Question 5
- guest:list[str]=['Saif','Ahad','Mubashir','Muzamil']
- for guests in guest:
-  print(f"Dear {guests} please come my home and taste my food")
-  print(f"\n {guest}can come to dinner")
-  guest[1] = "Mudassar Hassan"
-  for guest2 in guest:
+guest:list[str]=['Ahad','Mubashir','Muzamil']
+
+print(guest)
+ 
+guest.insert(1,"Saif")
+
+print(guest)
+
+for guest2 in guest:
    print(f"Dear {guest2} please come my home and taste my food")
+   
+   
+   
+   
+   
+   
 #Question 6
-guest:list[str]=['mudassar','don','ustaad','shanzia']
-print(f"Dear {guest}, you are still invited to dinner at my place. Looking forward to having you")
-guest.insert(0,"shahid")
-print(guest)
-middleindex = len(guest)
-guest.insert(middleindex,"anwar")
-guest.append("hassan")
-print(guest)
-#Question 7
-guest:list[str]=['mudassar','don','ustaad','shanzia']
-print("Unfortunately, I can invite only two people for dinner.\n")
+guest:list[str]=['Ahad','Mubashir','Muzamil']
 
-remove= guest.pop()
-remove= guest.pop()
-print(f"Sorry, {remove}, I can't invite you to dinner.")
+print(guest)
+
+guest.insert(0,"Saif")
+
+print(guest)
+
+guest.insert(2,"Abdullah")
+
+print(guest)
+
+guest.append("Ali")
+
+print(guest)
+
 for guest1 in guest:
-    print(f"{guest}, you're still invited to dinner")
-    del[guest[0]]
-    del[guest[0]]
+
+ print(f"{guest1} i invite you tonight dinner")
+ 
+ 
+ 
+ 
+ 
+#Question 7
+guest:list[str]=['Ahad','Mubashir','Muzamil','Abdullah','Arslan']
+
+print(guest)
+
+print("I can invite only two people of the dinner")
+
+guest1 = guest.pop()
+guest2 = guest.pop()
+guest3 = guest.pop()
+
+
+print(f"sorry {guest1,guest2,guest3} i can not invited them into the dinner")
+
+print(f"{guest} they still invited")
+
+del guest[0]
+del guest[0]
+
+print(f"{guest} they have an empty list at the end of your program")
+
+
+
+
+
+
 #Question 8
+places:list[str]=['lahore','karachi','multan','brooklyne','newyork']
+print("Original list :")
+print(places)
+print("By using sorted method :")
+print(sorted(places))
+print("By using reverse sorted method")
+print(sorted(places ,reverse=True))
+print("list is still in its original order :")
+print(places)
+print("using reverse method :")
+places.reverse()
+print(places)
+print("using reverse method again :")
+places.reverse()
+print(places)
+print("original list print again:")
+print(places)
+print("sorted list : ")
+print(sorted(places))
 
-places_to_visit = ["Kyoto", "lahore", "karachi", "islamabad", "pashawar"]
-
-print("Original list:")
-print(places_to_visit)
-
-print("\nList in alphabetical order using sorted():")
-print(sorted(places_to_visit))
 
 
-print("\nList after using sorted() (original order):")
-print(places_to_visit)
-
-print("\nList in reverse-alphabetical order using sorted():")
-print(sorted(places_to_visit, reverse=True))
 
 
-print("\nList after using sorted() in reverse (original order):")
-print(places_to_visit)
 
-
-places_to_visit.reverse()
-print("\nList after using reverse():")
-print(places_to_visit)
-
-places_to_visit.reverse()
-print("\nList after using reverse() again (back to original order):")
-print(places_to_visit)
-
-places_to_visit.sort()
-print("\nList after using sort() (alphabetical order):")
-print(places_to_visit)
-
-places_to_visit.sort(reverse=True)
-print("\nList after using sort(reverse=True) (reverse-alphabetical order):")
-print(places_to_visit)
 
 #Question 9
-cities = ["New York", "Tokyo", "Paris", "Sydney", "Cairo"]
-
-
-print("Original list:")
+cities:list[str]=['lahore','karachi','multan','akbar chonk','bdami bagh','multan','sahiwal','azaad kashmir','jamo kashmir']
+cities1:list[str]=['america','china','russia','ireland']
+print("Original list :")
 print(cities)
-
-print("\nList in alphabetical order using sorted():")
+print("1 sorted method :")
 print(sorted(cities))
-
-print("\nList after using sorted() (original order):")
-print(cities)
-print("\nList in reverse-alphabetical order using sorted():")
-print(sorted(cities, reverse=True))
-
-
-print("\nList after using sorted() in reverse (original order):")
-print(cities)
-
-
+print("2 reverse sorted method")
+print(sorted(cities ,reverse=True))
+print("3 reverse method :")
 cities.reverse()
-print("\nList after using reverse():")
+print(cities)
+print("4 appened method")
+cities.append("jallo moor")
+print(cities)
+print("5 insert method")
+cities.insert(1,"Daroghawala")
+print(cities)
+print("6 pop method")
+cities.pop()
+print(cities)
+print("7 pop method with indexing")
+cities.pop(4)
+print(cities)
+print("8 remove method")
+cities.remove("Daroghawala")
+print(cities)
+print("9 del method")
+del cities[2]
+print(cities)
+print("10 count method")
+cities.count(3)
+print(cities)
+print("11 index method")
+cities.index("multan")
+print(cities)
+print("12 copy method")
+cities.copy()
+print(cities)
+print("13 clear method")
+cities.clear()
+print(cities)
+print("extend method")
+cities.extend(cities1)
 print(cities)
 
 
-cities.reverse()
-print("\nList after using reverse() again (back to original order):")
-print(cities)
-
-cities.append("Rio de Janeiro")
-print("\nList after using append():")
-print(cities)
-
-cities.insert(2, "Berlin")
-print("\nList after using insert() at position 2:")
-print(cities)
 
 
-popped_city = cities.pop()
-print("\nCity removed using pop():", popped_city)
-print("List after using pop():")
-print(cities)
 
-cities.remove("Paris")
-print("\nList after using remove() to remove 'Paris':")
-print(cities)
-
-cities.sort()
-print("\nList after using sort() (alphabetical order):")
-print(cities)
-
-
-cities.sort(reverse=True)
-print("\nList after using sort(reverse=True) (reverse-alphabetical order):")
-print(cities)
-
-print("\nNumber of cities in the list:")
-print(len(cities))
 
 #Question 10
 
-cities = ["New York", "Tokyo", "Paris", "Sydney", "Cairo"]
+city:list[str]=['lahore','sahiwal','badami bagh','jallo moor']
+
+#print(city[4])
 
 
-print("List of cities:")
-print(cities)
-
-print("\nAttempting to access an index that is out of range (index 5):")
-try:
-    print(cities[5])  
-except IndexError as e:
-    print(f"Error encountered: {e}")
-
-print("\nCorrected access to the last element (index 4):")
-print(cities[4])
